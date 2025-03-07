@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Topologi Jaringan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Perangkat Jaringan</h2>
+            <div class="device" draggable="true" data-type="PC">🖥️ PC</div>
+            <div class="device" draggable="true" data-type="Switch">🔌 Switch</div>
+            <div class="device" draggable="true" data-type="Router">📡 Router</div>
+            <div class="device" draggable="true" data-type="Server">🖥️ Server</div>
+
+            <h2>Kabel</h2>
+            <button class="cable-btn" data-type="utp">🟢 UTP</button>
+            <button class="cable-btn" data-type="fiber">🔵 Fiber Optic</button>
+            <button class="cable-btn" data-type="coaxial">🟠 Coaxial</button>
+            <button class="cable-btn" data-type="stp">🔴 STP</button>
+
+            <h2>Actions</h2>
+            <button id="export-btn">📷 Ekspor Canvas</button>
+            <button id="delete-btn">❌ Hapus Perangkat</button>
+        </aside>
+
+        <main class="canvas-container">
+            <!-- Canvas untuk menampilkan perangkat dan kabel -->
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
